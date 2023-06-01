@@ -65,33 +65,33 @@ $('#name').focus(function () {
 });
 
 
-// document.getElementById("submit").addEventListener("click", () => {
-//     let Fname = document.getElementById("Fname").value;
-//     let Lname = document.getElementById("Lname").value;
-//     let Phone = document.getElementById("num").value;
-//     let mail = document.getElementById("mail").value;
-//     let des = document.getElementById("detail").value;
-//     var bodys = "Name: " + Fname + " " + Lname + "<br/> Phone no.: " + Phone + "<br/> Email Id.:  " + mail + "<br/> Description: " + des;
+document.getElementById("submit").addEventListener("click", () => {
+let Fname = document.getElementById("Fname").value;
+let Lname = document.getElementById("Lname").value;
+     let Phone = document.getElementById("num").value;
+     let mail = document.getElementById("mail").value;
+     let des = document.getElementById("detail").value;
+     var bodys = "Name: " + Fname + " " + Lname + "<br/> Phone no.: " + Phone + "<br/> Email Id.:  " + mail + "<br/> Description: " + des;
 
-//     Email.send({
-//         Host: "smtp.gmail.com",
-//         Username: "theshaguntyagi@gmail.com",
-//         Password: "shaguntyagi@2003",
-//         To: 'theshaguntyagi@gmail.com',
-//         From: mail,
-//         Subject: Fname + " Sent you a mail (Portfolio)",
-//         Body: bodys
-//     }).then(
-//         message => {
-//             if (message == 'OK') {
-//                 progg.innerText = "Done";
-//                 setInterval(() => {
-//                     location.reload();
-//                 }, 2000)
-//             }
-//             else {
-//                 alert('There is an error in sending message. Or you missed some area')
-//             }
-//         }
-//     );
-// })
+     Email.send({
+         Host: "smtp.gmail.com",
+         Username: "theshaguntyagi@gmail.com",
+         Password: "shaguntyagi@2003",
+         To: 'theshaguntyagi@gmail.com',
+         From: mail,
+         Subject: Fname + " Sent you a mail (Portfolio)",
+         Body: bodys
+     }).then(
+         message => {
+             if (message == 'OK') {
+                 progg.innerText = "Done";
+                 setInterval(() => {
+                     location.reload();
+                 }, 2000)
+             }
+             else {
+                 alert('There is an error in sending message. Or you missed some area')
+             }
+         }
+     );
+ })
